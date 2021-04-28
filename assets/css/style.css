@@ -1,0 +1,285 @@
+/* prepocces */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* x      prepocces     x */
+
+/* variables */
+:root {
+  --themecolor: #6900d1;
+}
+/* x     variables    x */
+
+/* global classes */
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.active {
+  border-bottom: 2px solid #ffffff;
+}
+.btn {
+  padding: 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 0.4rem;
+  font-size: 14px;
+  margin: 0.3rem;
+}
+.bg {
+  background: var(--themecolor);
+  color: #ffffff;
+}
+/*  x     global classes   x */
+
+/* header start here  */
+.header {
+  background: var(--themecolor);
+}
+.header .navbar .brandAndToggler {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 1rem 0 0;
+  color: #ffffff;
+}
+.header .navbar .brandAndToggler h1 {
+  font-size: 40px;
+}
+.header .navbar .brandAndToggler .hamburger {
+  cursor: pointer;
+}
+.header .navbar #menu {
+  height: 0;
+  display: none;
+  transition: all ease-in-out 0.5s;
+}
+.header .navbar #menu ul li {
+  text-align: right;
+  margin: 0.8rem 0 0.8rem 1.5rem;
+}
+.header .navbar #menu ul li:hover a {
+  border-bottom: 2px solid #ffffff;
+}
+.header .navbar #menu ul li a {
+  font-size: 12px;
+}
+.showMenu {
+  display: block !important;
+  height: 10rem !important;
+}
+
+/* bannar section start here  */
+.bannar {
+  text-align: center;
+  margin: 0;
+}
+.bannar .bannarDetails {
+  padding: 3rem 0;
+}
+.bannar .bannarDetails h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 50px 0;
+}
+.bannar .bannarDetails p {
+  padding: 1rem 0;
+  margin: 1.2rem 0;
+}
+.expressbtn {
+  background: #ffffff;
+  color: #000000;
+}
+.bannar .bannarImages {
+  margin: 0;
+  display: none;
+}
+.bannar .bannarImages img {
+  max-height: 500px;
+  text-align: center;
+  margin: 0;
+}
+/* x    bannar section start here    x */
+/* x    header end here    x */
+
+/* servise section start here  */
+.service {
+  margin: 5rem 0;
+  text-align: center;
+}
+.service .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.service p {
+  margin-bottom: 4rem;
+}
+.service .servicesBoxes {
+}
+.service .servicesBoxes .serviceBox {
+  cursor: pointer;
+  text-align: left;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 15px 15px 2px rgba(213, 213, 213, 0.5);
+  transition: all ease 0.6s;
+}
+.service .servicesBoxes .serviceBox:hover {
+  background: var(--themecolor);
+  color: #ffffff;
+}
+.service .servicesBoxes .serviceBox:hover .img {
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
+.service .servicesBoxes .serviceBox .img {
+  font-size: 4rem;
+  border-radius: 0.5rem;
+  border: 3px solid var(--themecolor);
+  padding: 1rem;
+  color: var(--themecolor);
+  margin: 3rem 0;
+}
+.service .servicesBoxes .serviceBox h6 {
+  font-weight: bold;
+}
+.service .servicesBoxes .serviceBox p {
+  margin: 2.5rem 0;
+}
+.service .servicesBoxes .serviceBox .fa-arrow-right {
+  font-size: 1.4rem;
+}
+/* x   servise section end here   x  */
+
+/* feature section star here */
+.feature {
+  margin: 5rem 0;
+}
+.feature img {
+  max-width: 90%;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+.feature .featureBox {
+  width: 90%;
+}
+.feature .featureBox h2 {
+  font-weight: bold;
+  line-height: 3rem;
+}
+.feature .featureBox p {
+  margin: 2rem 0 3rem;
+  color: #808080;
+  line-height: 1.1rem;
+}
+.feature .featureBox a {
+  background: var(--themecolor);
+}
+/* x  feature section star here  x */
+
+/* developers section start here */
+.developers {
+  margin-bottom: 8rem;
+  text-align: center;
+}
+.developers .developer {
+  width: 90%;
+  margin: 8rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0px 8px 2px skyblue;
+  position: relative;
+}
+.developers .developer img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 10px 2px rgba(130, 130, 130, 0.5);
+}
+.developers .developer h3 {
+  padding-top: 6rem;
+}
+.developers .developer h4 {
+  margin: 1.5rem auto 0;
+}
+.developers .developer p {
+  padding: 2rem 3rem;
+  color: #808080;
+}
+/* x    developers section start here    x */
+
+/* footer start here  */
+.footer {
+  background: var(--themecolor);
+  text-align: center;
+}
+.footer h2 {
+  padding: 3rem;
+  font-size: 2rem;
+}
+.footer input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #808080;
+  margin: 0 auto 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  outline: none;
+}
+.footer p.copyright {
+  padding: 5rem 0 1rem;
+}
+/* x    footer start here    x */
+
+/* media quiry */
+@media only screen and (min-width: 740px) {
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  .header .navbar .brandAndToggler .hamburger {
+    display: none;
+  }
+  .header .navbar #menu {
+    display: flex;
+  }
+  .bannar .bannarImages {
+    display: flex;
+  }
+  .container {
+    width: 85%;
+  }
+  .feature img {
+    max-width: 45%;
+  }
+
+  .feature .featureBox {
+    width: 45%;
+  }
+
+  .developers .developer {
+    width: 60%;
+  }
+  .footer input {
+    width: auto;
+  }
+}
+/* x      media quiry     x */
